@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 246.71 78.4">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #231f20;
+      }
+
+      .cls-1, .cls-2 {
+        font-family: Inter-ExtraBold, Inter;
+        font-size: 66.02px;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        fill: #302e2f;
+      }
+
+      .cls-3, .cls-4 {
+        letter-spacing: -.1em;
+      }
+
+      .cls-5, .cls-6 {
+        letter-spacing: -.15em;
+      }
+
+      .cls-6 {
+        fill: #faf068;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <text class="cls-1" transform="translate(0 57.02)"><tspan class="cls-4" x="0" y="0">BOOBLE</tspan><tspan class="cls-5" x="230.53" y="0">.</tspan></text>
+      <text class="cls-2" transform="translate(0 57.02)"><tspan class="cls-3" x="0" y="0">BOOBLE</tspan><tspan class="cls-6" x="230.53" y="0">.</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,290 @@
+@media (max-width:1200px){
+  body .wrapper{
+    max-width: 800px;
+  }
+}
+
+@media (max-width:900px){
+  body .wrapper{
+    max-width: 80%;
+  }
+
+  body .photos-result-container{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+body{
+  padding-bottom: 20px;
+}
+
+
+*{
+  font-family: "DM Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.header{
+  
+  border-width: 0;
+  border-bottom-width: 2px;
+  border-radius: 1px;
+  
+  border-color: #dfdfdf;
+  border-style:solid;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  
+}
+
+.wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-container {
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-desc-container{
+  
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.logo {
+  display: flex;
+}
+
+
+.header-container img{
+  width: 100px;
+}
+
+.header-container a{
+  font-weight: 400;
+  
+}
+
+
+/*search*/
+.search-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.search-section{
+  margin-top: 50px;
+}
+
+.search{
+  width: 80%;
+  height: 70px;
+  margin: 0px auto;
+  position: relative
+}
+
+.search input{
+  width: 100%;
+  height: 70px;
+  border-radius: 10px;
+  border-width: 0;
+  
+  box-shadow: rgba(31, 31, 31, 0.1) 0px 4px 16px, rgba(31, 31, 31, 0.05) 0px 8px 32px;
+  padding: 20px;
+  padding-left: 60px;
+  color: #1d1d1d;
+  font-size: 1.4rem;
+  
+  outline: 1px;
+}
+
+.search input::placeholder{
+  color: #1d1d1d;
+  font-size: 1.4rem;
+  opacity: 0.4;
+  letter-spacing: 1px;
+}
+
+
+.search img{
+  filter: invert(100%) sepia(63%) saturate(940%) hue-rotate(358deg) brightness(101%) contrast(105%);
+  width: 20px;
+  position: absolute;
+  
+  margin-left: 20px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header-text-container{
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+}
+
+.header-text-container span{
+  color: rgb(230, 191, 22);
+  font-style: italic;
+}
+
+.header-text-container h1{
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.header-text-container h2{
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+
+.show-more{
+  
+  height: 60px;
+  width: 200px;
+  padding: 20px;
+  border: none;
+  background-color: white;
+  box-shadow: rgba(31, 31, 31, 0.1) 0px 4px 16px, rgba(31, 31, 31, 0.05) 0px 8px 32px;
+  border-radius: 7px;
+  font-size: 1.2rem;
+  text-align: center;
+  
+  opacity: 0.8;
+    
+}
+
+.show-more:hover{
+  cursor: pointer;
+  background-color: rgb(250, 250, 250);
+}
+
+.show-more:active{
+  background-color: rgb(240, 240, 240);
+}
+
+
+
+.show-more-container{
+  margin: 40px auto;
+  
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.show-more-container img{
+  width: 15px;
+  opacity: 0.6;
+  margin-left: 8px;
+}
+
+.photos-result-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+  margin-top: 20px;
+}
+
+.photos-result-container img{
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: all ease-in-out 0.2s;
+}
+
+.notFound{
+  display: none;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 50%;;
+  transform: translateX(-50%);
+}
+
+.js-display{
+  display: inline-block;
+}
+
+.js-images{
+  position: relative;
+}
+
+.js-images:hover .photo-js{
+  filter: brightness(50%) saturate(80%);
+  scale: 1.02;
+}
+
+.js-images:hover .likes-container-js{
+  scale: 1.2;
+  opacity: 1;
+}
+
+.likes-js{
+  
+  color: #f1f1f1;
+  font-size: 1.3rem;
+}
+
+.likes-container-js{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  gap: 5px;
+  transition: all ease-in-out 0.2s;
+  opacity: 0;
+}
+
+.likes-container-js img{
+  width: 30px;
+  height: 30px;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p{
+  font-size: 0.9rem;
+}
+
+footer span{
+  color: rgb(230, 191, 22);
+}
+
